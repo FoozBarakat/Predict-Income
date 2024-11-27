@@ -455,7 +455,7 @@ def plot_roc_curve(models, X_test, y_test):
         plt.plot(fpr, tpr, label=f'{model_name} (AUC = {roc_auc:.2f})')
 
     # Plot the diagonal line for random chance
-    plt.plot([0, 1], [0, 1], '--', label='Random Chance', color='black')
+    plt.plot([0, 1], [0, 1], '--', label='--', color='black')
 
     # Customize plot
     plt.xlabel('False Positive Rate')
