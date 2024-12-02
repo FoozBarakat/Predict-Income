@@ -74,9 +74,12 @@ This project aims to predict whether an individual's income exceeds $50,000 per 
 ## 💡 Insights and Results
 
 - **Influential Factors**: Features like education, age, and hours worked were significant predictors of income level.
-- **Best Model Performance**:
-  - Random Forest Classifier with tuned hyperparameters achieved an accuracy of **85%** on test data.
-  - The model showed strong generalization with minimal overfitting.
+- **Model Performance**:
+  - The dataset is `highly imbalanced`, with `76%` of instances labeled `<=50K` and only `24%` labeled `>50K`, affecting the models' ability to predict the minority class effectively.
+  - `Both` models performed `better` on the majority class `(<=50K)`, with higher precision and recall compared to the minority class (>50K).
+  - The `Random Forest` model `struggled` with recall for the `minority class`, missing some true positives.
+  - The `tuned Neural Network` model improved performance for the `minority class` but still showed lower recall, highlighting the challenge posed by the imbalance.
+  - `Handling` the `imbalance`, may lead to better results, especially for the minority class (>50K).
 ---
 
 *Note: This project was developed for educational purposes and demonstrates practical applications of machine learning techniques.*
