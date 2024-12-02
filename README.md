@@ -81,6 +81,3 @@ This project aims to predict whether an individual's income exceeds $50,000 per 
   - The `tuned Neural Network` model improved performance for the `minority class` but still showed lower recall, highlighting the challenge posed by the imbalance.
   - `Handling` the `imbalance`, may lead to better results, especially for the minority class (>50K).
 ---
-
-*Note: This project was developed for educational purposes and demonstrates practical applications of machine learning techniques.*
-```
